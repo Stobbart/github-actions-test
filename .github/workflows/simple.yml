@@ -18,3 +18,13 @@ jobs:
         print
         (platform.processor)
       shell: python
+  run-shell-command2:
+    needs: [run-shell-command]
+    runs-on: ubuntu-latest
+    steps:
+    - name: echo a string
+      run: echo "Hello World"
+    - name: multiline script
+      run: 
+       node -v
+        npm -v
