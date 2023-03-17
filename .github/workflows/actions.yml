@@ -15,7 +15,5 @@ jobs:
           who-to-greet: John
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time }}"
-      - name: Checkout
-        uses: actions/checkout@v1
 
 
